@@ -1,5 +1,6 @@
 usage: termeal.py [-h] [-x XCOL] [-y YCOL] [-f FILTER] [-c COLOR]
-                  [-d {colors,ports}]
+                  [-d {colors,ports}] [-epi EPHEMERALPORTMIN]
+                  [-epa EPHEMERALPORTMAX]
                   interface
 
 A Scanner Interface Darkly
@@ -17,3 +18,8 @@ optional arguments:
                         number of color
   -d {colors,ports}, --display {colors,ports}
                         type of side display
+  -epi EPHEMERALPORTMIN, --ephemeralportmin EPHEMERALPORTMIN
+                        ephemeral port min to exclude (32768 by default), set
+                        to 65536 to include all ports
+  -epa EPHEMERALPORTMAX, --ephemeralportmax EPHEMERALPORTMAX
+                        ephemeral port max to exclude (61000 by default)
